@@ -1,0 +1,33 @@
+Creational Patterns(Patterns to initialize objects)
+
+PROTOTYPE PATTERN
+
+Usage:
+- Creating new Objects by copying the defined prototypes
+
+Pros:
+- Prototype (and Prefab) are already in memory and instantiate fast
+- Objects copy themselves and offer standard interface -> secure, standartized
+
+Cons:
+- Does not reap any benefits if there is always only one instance of our prototype object
+- Some internal structures don't allow for cloning
+
+How-To Abstract:
+- Prototype (Interface) that contracts Copy()
+- ConretePrototype Class that implements Copy() by returning an instance of itself
+- Client Class that asks ConcretePrototypes to Clone themselves
+
+How-To Example:
+- Create Interface ICopyable with Copy() contracted
+- Create Parent Class that inherits from ICopyable and implements Copy() by returning an instance
+- Create spawnable Classes that inherit from Parent Class and contain Object specific functions
+- Create Spawner Class that returns copies to client
+- Call Spawner Class via a Client Script
+
+Example Use:
+- Creating a Spawn System to Spawn different types of Enemies
+
+Tips:
+- Use a prototype manager class to keep a registry of all prototype objects and 
+  direct communication between Client and Prototype

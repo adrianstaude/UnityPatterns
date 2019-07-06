@@ -6,7 +6,6 @@ public class Spawner : MonoBehaviour
 {
     public ICopyable copy;
 
-
     public Enemy SpawnEnemy(Enemy prototype)
     {
         copy = prototype.Copy();
