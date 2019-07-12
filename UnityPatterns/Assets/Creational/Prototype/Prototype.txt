@@ -3,7 +3,7 @@ Creational Patterns(Patterns to initialize objects)
 PROTOTYPE PATTERN
 
 Usage:
-- Creating new Objects by copying the defined prototypes that already exist as instance in Memory
+- Creating new Objects by copying the defined prototypes
 
 Pros:
 - Prototype (and Prefab) are already in memory and instantiate fast
