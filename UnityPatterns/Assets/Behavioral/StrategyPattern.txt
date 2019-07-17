@@ -1,0 +1,14 @@
+Behavioral Patterns(Patterns to control object behavior)
+
+STRATEGY PATTERN
+
+Usage:
+- Attaching behavioral components/algorithms onto Objects on runtime
+
+Pros:
+- Fewer condition statements, since each behavior has its own component
+- Alternative to subclassing: No hardwiring behaviors in each subclass(?)
+
+Cons:
+- No abstraction from Client, so client has to know the various strategies
+- Increased Code Complexity
